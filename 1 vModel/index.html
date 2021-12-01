@@ -1,0 +1,49 @@
+<!--
+ * @Author: MrAlenZhong
+ * @Date: 2021-12-01 08:54:04
+ * @LastEditors: MrAlenZhong
+ * @LastEditTime: 2021-12-01 09:53:29
+ * @Description: 
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">  
+    <input type="text" v-model="name" placeholder="名字"/>
+    <input type="text" v-model="age" placeholder="年龄"/>
+    <input type="text" v-model="email" placeholder="邮箱"/>
+    <input type="text" v-model="phone" placeholder="电话号码"/>
+    <div>
+      <p>姓名：<span>{{name}}</span></p>
+      <p>年龄：<span>{{age}}</span></p>
+      <p>邮箱：{{email}}</p>
+      <p>
+        <p>
+          电话:{{phone}}
+        </p>
+    </p>
+    </div>
+  </div>
+  <script src="./VModel.js"></script>
+  <script>
+    var app = new VModel({
+      el: '#app',
+      data: {
+        name: '',
+        age: '',
+        email: '',
+        phone: ''
+      }
+    })
+  </script>
+</body>
+
+</html>
