@@ -2,7 +2,7 @@
  * @Author: MrAlenZhong
  * @Date: 2021-12-01 08:54:04
  * @LastEditors: MrAlenZhong
- * @LastEditTime: 2021-12-01 09:53:29
+ * @LastEditTime: 2021-12-01 17:04:25
  * @Description: 
 -->
 <!DOCTYPE html>
@@ -17,17 +17,17 @@
 
 <body>
   <div id="app">  
-    <input type="text" v-model="name" placeholder="名字"/>
-    <input type="text" v-model="age" placeholder="年龄"/>
-    <input type="text" v-model="email" placeholder="邮箱"/>
-    <input type="text" v-model="phone" placeholder="电话号码"/>
+    <input type="text" v-model="name" name="名字" placeholder="名字"/>
+    <input type="text" v-model="age" name="年龄" placeholder="年龄"/>
+    <input type="text" v-model="email" name="邮箱" placeholder="邮箱"/>
+    <input type="text" v-model="phone" name="电话号码" placeholder="电话号码"/>
     <div>
       <p>姓名：<span>{{name}}</span></p>
       <p>年龄：<span>{{age}}</span></p>
-      <p>邮箱：{{email}}</p>
+      <p>邮箱：<span>{{email}}</span></p>
       <p>
         <p>
-          电话:{{phone}}
+          电话: <span>{{phone}}</span>
         </p>
     </p>
     </div>
